@@ -70,7 +70,7 @@ pipeline {
         echo "Building and push the image..."
         withCredentials ([
           usernamePassword(
-            credentialsId: 's2-second-job',
+            credentialsId: 'docker-credentials',
             usernameVariable: 'DOCKER_HUB_USER', 
             passwordVariable: 'DOCKER_HUB_PASSWORD'
           )
