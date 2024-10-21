@@ -70,9 +70,9 @@ pipeline {
         echo "Building and push the image..."
         withCredentials ([
           usernamePassword(
-            credentialsId: 'docker_credentials',
-            usernameVariable: 'jeongsik86', 
-            passwordVariable: '72712kjs!'
+            credentialsId: 'docker-credentials',
+            usernameVariable: 'DOCKER_HUB_USER', 
+            passwordVariable: 'DOCKER_HUB_PASSWORD'
           )
         ]) {
           echo "some credentials info : ${DOCKER_HUB_USER}, ${DOCKER_HUB_PASSWORD}"
