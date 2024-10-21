@@ -71,8 +71,8 @@ pipeline {
         withCredentials ([
           usernamePassword(
             credentialsId: 'Jeongsik86',
-            usernameVariable: 'DOCKER_HUB_USER', 
-            passwordVariable: 'DOCKER_HUB_PASSWORD'
+            usernameVariable: 'jeongsik86', 
+            passwordVariable: '72712kjs!'
           )
         ]) {
           echo "some credentials info : ${DOCKER_HUB_USER}, ${DOCKER_HUB_PASSWORD}"
